@@ -50,9 +50,9 @@ public class ExtraTask {
         int close2 = Math.abs(b - c);
         int close3 = Math.abs(a - c);
 
-        if (close1 <= 1 && close2 >= 2 && close3 >= 2) {
+        if (close1 <= 1 && close3 >= 2 && close2 >= 2) {
             return true;
-        } else if (close2 <= 1 && close1 >= 2 && close3 >= 2) {
+        } else if (close3 <= 1 && close1 >= 2 && close2 >= 2) {
             return true;
         } else {
             return false;
